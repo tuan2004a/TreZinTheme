@@ -1,0 +1,405 @@
+{
+	"$schema": "https://json.schemastore.org/vs-code-theme", // Schema để validate cấu trúc file theme
+	"type": "dark", // Loại theme: "dark" (tối) hoặc "light" (sáng)
+	"name": "TreZin Dark Nebula Glow - Low Blue Light", // Tên hiển thị của theme
+	"semanticHighlighting": true, // Bật tính năng tô màu ngữ nghĩa nâng cao (semantic highlighting)
+
+	"colors": {
+		// ═══════════════════════════════════════════════════════════
+		// EDITOR - Khu vực soạn thảo code chính
+		// ═══════════════════════════════════════════════════════════
+		"editor.background": "#000018", // Màu nền của editor //check 
+		"editor.foreground": "#caf0f8", // Màu chữ mặc định trong editor
+		"editor.lineHighlightBackground": "#183048", // Màu nền của dòng hiện tại (dòng con trỏ đang đứng)
+		"editor.selectionBackground": "#183048", // Màu nền khi bôi đen văn bản (50 = 31% opacity)
+		"editor.wordHighlightBackground": "#181830", // Màu nền khi highlight từ giống nhau (40 = 25% opacity)
+		"editorCursor.foreground": "#78B4D2", // Màu con trỏ nhấp nháy (caret)
+		"editorLineNumber.foreground": "#3C5A78", // Màu số dòng (line number) bình thường
+		"editorLineNumber.activeForeground": "#7896B4", // Màu số dòng của dòng hiện tại
+		"editorIndentGuide.background": "#1E3C5A", // Màu đường kẻ thụt lề (indentation guide) mặc định
+		"editorIndentGuide.activeBackground": "#3C5A78", // Màu đường kẻ thụt lề của khối code hiện tại
+		"editorBracketMatch.background": "#3C5A9640", // Màu nền highlight cặp ngoặc khớp nhau
+		"editorBracketMatch.border": "#5A96B4", // Màu viền của cặp ngoặc khớp nhau
+
+		// ═══════════════════════════════════════════════════════════
+		// ACTIVITY BAR - Thanh biểu tượng dọc bên trái cùng
+		// (Explorer, Search, Git, Debug, Extensions...)
+		// ═══════════════════════════════════════════════════════════
+		"activityBar.background": "#1a2a42", // Màu nền của Activity Bar
+		"activityBar.foreground": "#78B4D2", // Màu các biểu tượng (icons) trên Activity Bar
+		"activityBarBadge.background": "#3C96B4", // Màu nền của badge thông báo (số lỗi, số thay đổi Git...)
+		"activityBarBadge.foreground": "#1E1E1E", // Màu chữ/số trên badge thông báo
+
+		// ═══════════════════════════════════════════════════════════
+		// SIDE BAR - Thanh bên (Explorer, Search Results, Git Changes...)
+		// ═══════════════════════════════════════════════════════════
+		"sideBar.background": "#181830", // Màu nền của Side Bar
+		"sideBar.foreground": "#fff", // Màu chữ mặc định trong Side Bar
+		"sideBarTitle.foreground": "#96D2F0", // Màu tiêu đề chính (VD: "EXPLORER")
+		"sideBarSectionHeader.background": "#1E1E3C", // Màu nền của header từng section (VD: "OPEN EDITORS")
+		"sideBarSectionHeader.foreground": "#78B4B4", // Màu chữ của header từng section
+
+		// ═══════════════════════════════════════════════════════════
+		// TABS - Các tab file đang mở
+		// ═══════════════════════════════════════════════════════════
+		"tab.activeBackground": "#1E3C5A", // Màu nền của tab đang được chọn (active)
+		"tab.activeForeground": "#B4F0F0", // Màu chữ của tab đang được chọn
+		"tab.inactiveBackground": "#1E1E3C", // Màu nền của các tab không được chọn
+		"tab.inactiveForeground": "#5A7896", // Màu chữ của các tab không được chọn
+		"tab.border": "#001E3C", // Màu viền phân cách giữa các tab
+		"editorGroupHeader.tabsBackground": "#001E1E", // Màu nền của thanh chứa tất cả các tab
+
+		// ═══════════════════════════════════════════════════════════
+		// STATUS BAR - Thanh trạng thái dưới cùng
+		// (Hiển thị branch Git, ngôn ngữ, encoding, errors...)
+		// ═══════════════════════════════════════════════════════════
+		"statusBar.background": "#001E3C", // Màu nền mặc định của Status Bar
+		"statusBar.foreground": "#78B4B4", // Màu chữ mặc định trên Status Bar
+		"statusBar.debuggingBackground": "#1E5A78", // Màu nền khi đang chạy Debug mode
+		"statusBar.noFolderBackground": "#1E1E3C", // Màu nền khi chưa mở folder/workspace nào
+
+		// ═══════════════════════════════════════════════════════════
+		// TITLE BAR - Thanh tiêu đề cửa sổ (trên cùng)
+		// ═══════════════════════════════════════════════════════════
+		"titleBar.activeBackground": "#001E1E", // Màu nền khi cửa sổ VS Code đang active (focus)
+		"titleBar.activeForeground": "#7896B4", // Màu chữ khi cửa sổ đang active
+		"titleBar.inactiveBackground": "#1E1E1E", // Màu nền khi cửa sổ không active (unfocused)
+
+		// ═══════════════════════════════════════════════════════════
+		// INPUT - Các ô nhập liệu (Search box, Replace box...)
+		// ═══════════════════════════════════════════════════════════
+		"input.background": "#1E1E3C", // Màu nền của ô input
+		"input.foreground": "#96B4D2", // Màu chữ khi gõ trong ô input
+		"input.border": "#3C5A78", // Màu viền của ô input
+		"input.placeholderForeground": "#5A7896", // Màu chữ placeholder (gợi ý mờ)
+
+		// ═══════════════════════════════════════════════════════════
+		// DROPDOWN - Menu thả xuống (Select box)
+		// ═══════════════════════════════════════════════════════════
+		"dropdown.background": "#1E1E3C", // Màu nền của dropdown
+		"dropdown.foreground": "#96B4D2", // Màu chữ trong dropdown
+		"dropdown.border": "#3C5A78", // Màu viền của dropdown
+
+		// ═══════════════════════════════════════════════════════════
+		// BUTTON - Các nút bấm
+		// ═══════════════════════════════════════════════════════════
+		"button.background": "#1E5A78", // Màu nền mặc định của button
+		"button.foreground": "#B4F0F0", // Màu chữ trên button
+		"button.hoverBackground": "#3C7896", // Màu nền khi hover (di chuột qua) button
+
+		// ═══════════════════════════════════════════════════════════
+		// SCROLLBAR - Thanh cuộn
+		// ═══════════════════════════════════════════════════════════
+		"scrollbarSlider.background": "#3C5A7850", // Màu thanh cuộn bình thường (50 = 31% opacity)
+		"scrollbarSlider.hoverBackground": "#5A789670", // Màu thanh cuộn khi hover (70 = 44% opacity)
+		"scrollbarSlider.activeBackground": "#7896B490", // Màu thanh cuộn khi đang kéo (90 = 56% opacity)
+
+		// ═══════════════════════════════════════════════════════════
+		// LIST & TREE - Danh sách file/folder trong Explorer, Search Results...
+		// ═══════════════════════════════════════════════════════════
+		"list.activeSelectionBackground": "#1E3C5A", // Màu nền item đang được chọn và focus
+		"list.activeSelectionForeground": "#B4F0F0", // Màu chữ item đang được chọn và focus
+		"list.hoverBackground": "#1E3C3C", // Màu nền khi hover qua item
+		"list.focusBackground": "#1E3C78", // Màu nền item đang focus (dùng bàn phím điều hướng)
+
+		// ═══════════════════════════════════════════════════════════
+		// TERMINAL - Terminal tích hợp
+		// ═══════════════════════════════════════════════════════════
+		"terminal.background": "#1E1E1E", // Màu nền của Terminal
+		"terminal.foreground": "#96B4D2", // Màu chữ mặc định trong Terminal
+		"terminalCursor.foreground": "#78B4D2", // Màu con trỏ trong Terminal
+
+		// ═══════════════════════════════════════════════════════════
+		// GIT DECORATIONS - Màu trạng thái file Git trong Explorer
+		// ═══════════════════════════════════════════════════════════
+		"gitDecoration.modifiedResourceForeground": "#78B4D2", // Màu file đã sửa đổi (Modified - M)
+		"gitDecoration.deletedResourceForeground": "#7896B4", // Màu file đã xóa (Deleted - D)
+		"gitDecoration.untrackedResourceForeground": "#78B4B4", // Màu file chưa track (Untracked - U)
+		"gitDecoration.addedResourceForeground": "#5A96B4", // Màu file mới thêm vào Git (Added - A)
+
+		// ═══════════════════════════════════════════════════════════
+		// MISCELLANEOUS - Các thiết lập khác
+		// ═══════════════════════════════════════════════════════════
+		"focusBorder": "#3C7896", // Màu viền khi một element được focus (VD: ô tìm kiếm)
+		"widget.shadow": "#00001E80" // Màu đổ bóng của popup/widget (Command Palette, Quick Open...)
+	},
+
+	"tokenColors": [
+		// ═══════════════════════════════════════════════════════════
+		// SYNTAX HIGHLIGHTING - Tô màu cú pháp code
+		// ═══════════════════════════════════════════════════════════
+
+		{
+			"name": "Comment", // Chú thích trong code
+			"scope": [
+				"comment", // Tất cả các loại comment
+				"punctuation.definition.comment" // Ký tự bắt đầu comment (// hoặc /*)
+			],
+			"settings": {
+				"fontStyle": "italic", // Chữ nghiêng
+				"foreground": "#5A7896" // Màu xám xanh nhạt
+			}
+		},
+		{
+			"name": "Keywords", // Từ khóa ngôn ngữ
+			"scope": [
+				"keyword", // Từ khóa chung (if, else, for, while, return...)
+				"storage.type", // Khai báo kiểu (var, let, const, int, string...)
+				"storage.modifier" // Modifier (public, private, static, async...)
+			],
+			"settings": {
+				"foreground": "#78B4D2", // Màu xanh dương nhạt
+				"fontStyle": "bold" // Chữ đậm
+			}
+		},
+		{
+			"name": "Strings", // Chuỗi văn bản
+			"scope": [
+				"string", // Chuỗi trong dấu ngoặc ("...", '...')
+				"constant.other.symbol", // Symbol (Ruby, Elixir...)
+				"markup.inserted.git_gutter" // Dòng được thêm trong Git diff
+			],
+			"settings": {
+				"foreground": "#78B4B4" // Màu xanh ngọc (teal)
+			}
+		},
+		{
+			"name": "Functions/Methods", // Tên hàm/phương thức
+			"scope": [
+				"entity.name.function", // Tên hàm khi định nghĩa
+				"meta.function-call", // Khi gọi hàm
+				"variable.function", // Biến chứa function
+				"support.function", // Hàm built-in (console.log, print...)
+				"entity.name.method.js", // Method trong JS
+				"meta.class-method.js entity.name.function.js" // Method trong class JS
+			],
+			"settings": {
+				"foreground": "#96D2F0" // Màu xanh dương sáng
+			}
+		},
+		{
+			"name": "Classes/Types", // Tên class/kiểu dữ liệu
+			"scope": [
+				"entity.name.class", // Tên class khi định nghĩa
+				"entity.name.type", // Tên type (TypeScript, Go...)
+				"support.class", // Class built-in (Date, Array, Promise...)
+				"support.type" // Type built-in
+			],
+			"settings": {
+				"foreground": "#B4F0F0" // Màu cyan sáng
+			}
+		},
+		{
+			"name": "Numbers/Constants", // Số và hằng số
+			"scope": [
+				"constant.numeric", // Số (123, 3.14, 0xFF...)
+				"constant.language", // Hằng ngôn ngữ (true, false, null, undefined...)
+				"constant.character" // Ký tự đặc biệt
+			],
+			"settings": {
+				"foreground": "#5A96B4" // Màu xanh dương đậm
+			}
+		},
+		{
+			"name": "Operators/Punctuation", // Toán tử và dấu câu
+			"scope": [
+				"punctuation", // Dấu câu (. , ; : ( ) [ ] { })
+				"keyword.operator" // Toán tử (+ - * / = == != > < && ||)
+			],
+			"settings": {
+				"foreground": "#7896B4" // Màu xanh xám
+			}
+		},
+		{
+			"name": "Tags/HTML", // Thẻ HTML
+			"scope": [
+				"entity.name.tag" // Tên thẻ (div, span, p, a, button...)
+			],
+			"settings": {
+				"foreground": "#f26a8d" // Màu xanh dương đậm
+			}
+		},
+		{
+			"name": "HTML Attributes", // Thuộc tính HTML
+			"scope": [
+				"entity.other.attribute-name" // Tên thuộc tính (class, id, href, src...)
+			],
+			"settings": {
+				"foreground": "#78B4D2", // Màu xanh dương nhạt
+				"fontStyle": "italic" // Chữ nghiêng
+			}
+		},
+		{
+			"name": "Variables", // Biến
+			"scope": [
+				"variable", // Tên biến thông thường
+				"parameter" // Tham số hàm
+			],
+			"settings": {
+				"foreground": "#96B4D2" // Màu xanh xám nhạt (giống foreground mặc định)
+			}
+		},
+		{
+			"name": "Variable - Special", // Biến đặc biệt
+			"scope": [
+				"variable.language", // Biến ngôn ngữ (this, self, super...)
+				"variable.parameter" // Tham số hàm
+			],
+			"settings": {
+				"foreground": "#5A78B4", // Màu xanh tím
+				"fontStyle": "italic" // Chữ nghiêng
+			}
+		},
+		{
+			"name": "JSON Keys", // Khóa JSON (tổng quát)
+			"scope": [
+				"support.type.property-name.json" // Tên property trong JSON
+			],
+			"settings": {
+				"foreground": "#78B4F0" // Màu xanh dương sáng
+			}
+		},
+		{
+			"name": "JSON Level 1", // Khóa JSON cấp 1 (ngoài cùng)
+			"scope": ["meta.structure.dictionary.json support.type.property-name.json"],
+			"settings": {
+				"foreground": "#78B4D2" // Màu xanh dương nhạt
+			}
+		},
+		{
+			"name": "JSON Level 2", // Khóa JSON cấp 2 (nested 1 lần)
+			"scope": ["meta.structure.dictionary.json meta.structure.dictionary.json support.type.property-name.json"],
+			"settings": {
+				"foreground": "#5A96B4" // Màu xanh đậm hơn
+			}
+		},
+		{
+			"name": "JS/TS Functions", // Hàm trong JavaScript/TypeScript
+			"scope": [
+				"source.js entity.name.function.js", // Function trong JS
+				"source.ts entity.name.function.method.ts" // Method trong TS
+			],
+			"settings": {
+				"foreground": "#96D2F0", // Màu xanh dương sáng
+				"fontStyle": "italic" // Chữ nghiêng
+			}
+		},
+		{
+			"name": "Python Specific", // Cú pháp riêng cho Python
+			"scope": [
+				"source.python keyword.control", // Từ khóa điều khiển Python (if, for, while...)
+				"source.python entity.name.function.python" // Tên hàm Python
+			],
+			"settings": {
+				"foreground": "#78B4B4" // Màu xanh ngọc
+			}
+		},
+		{
+			"name": "Python Self", // Từ khóa self trong Python
+			"scope": [
+				"variable.language.self.python", // self
+				"variable.language.special.self.python" // self (scope khác)
+			],
+			"settings": {
+				"foreground": "#5A78B4", // Màu xanh tím
+				"fontStyle": "italic" // Chữ nghiêng
+			}
+		},
+		{
+			"name": "Markdown Heading", // Tiêu đề Markdown (# ## ###...)
+			"scope": [
+				"markup.heading.markdown", // Heading trong Markdown
+				"markup.heading" // Heading tổng quát
+			],
+			"settings": {
+				"foreground": "#B4F0F0", // Màu cyan sáng
+				"fontStyle": "bold" // Chữ đậm
+			}
+		},
+		{
+			"name": "Markdown Links", // Link trong Markdown
+			"scope": [
+				"markup.underline.link.markdown", // Link URL
+				"markup.underline.link" // Link tổng quát
+			],
+			"settings": {
+				"foreground": "#3C96B4", // Màu xanh dương
+				"fontStyle": "underline" // Gạch chân
+			}
+		},
+		{
+			"name": "Markdown Bold", // Chữ đậm trong Markdown (**text**)
+			"scope": ["markup.bold"],
+			"settings": {
+				"foreground": "#96D2F0", // Màu xanh sáng
+				"fontStyle": "bold" // Chữ đậm
+			}
+		},
+		{
+			"name": "Markdown Italic", // Chữ nghiêng trong Markdown (*text*)
+			"scope": ["markup.italic"],
+			"settings": {
+				"foreground": "#78B4B4", // Màu xanh ngọc
+				"fontStyle": "italic" // Chữ nghiêng
+			}
+		},
+		{
+			"name": "Markdown Code", // Code trong Markdown (`code` hoặc ```)
+			"scope": [
+				"markup.inline.raw", // Inline code `code`
+				"markup.fenced_code" // Code block ```
+			],
+			"settings": {
+				"foreground": "#78B4D2" // Màu xanh dương nhạt
+			}
+		},
+		{
+			"name": "CSS Properties", // Tên thuộc tính CSS
+			"scope": [
+				"support.type.property-name.css", // Property CSS (color, margin, padding...)
+				"support.type.vendored.property-name.css" // Property vendor (-webkit-, -moz-...)
+			],
+			"settings": {
+				"foreground": "#7896B4" // Màu xanh xám
+			}
+		},
+		{
+			"name": "CSS Values", // Giá trị CSS
+			"scope": [
+				"support.constant.property-value.css" // Giá trị CSS (block, inline, flex...)
+			],
+			"settings": {
+				"foreground": "#78B4B4" // Màu xanh ngọc
+			}
+		},
+		{
+			"name": "Invalid/Errors", // Code lỗi/không hợp lệ
+			"scope": [
+				"invalid", // Invalid chung
+				"invalid.illegal" // Cú pháp bất hợp pháp
+			],
+			"settings": {
+				"foreground": "#5A7896", // Màu xám xanh
+				"fontStyle": "strikethrough" // Gạch ngang (strikethrough)
+			}
+		},
+		{
+			"name": "Regex", // Biểu thức chính quy (Regular Expression)
+			"scope": [
+				"string.regexp" // Regex pattern
+			],
+			"settings": {
+				"foreground": "#3C96B4" // Màu xanh dương
+			}
+		},
+		{
+			"name": "Escape Characters", // Ký tự escape
+			"scope": [
+				"constant.character.escape" // Escape sequence (\n, \t, \\, \"...)
+			],
+			"settings": {
+				"foreground": "#5A96B4" // Màu xanh đậm
+			}
+		}
+	]
+}

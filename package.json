@@ -1,0 +1,26 @@
+{
+	"name": "trezintheme",
+	"displayName": "TreZinTheme",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.108.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "TreZin Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/trezin-dark-color-theme.json"
+			},
+			{
+				"label": "TreZin NightOwl",
+				"uiTheme": "vs-dark",
+				"path": "./themes/nightowl-color-theme.json"
+			}
+		]
+	}
+}
