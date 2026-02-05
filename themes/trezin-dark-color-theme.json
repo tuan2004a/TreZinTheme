@@ -1,404 +1,1145 @@
 {
-	"$schema": "https://json.schemastore.org/vs-code-theme", // Schema để validate cấu trúc file theme
-	"type": "dark", // Loại theme: "dark" (tối) hoặc "light" (sáng)
-	"name": "TreZin Dark Nebula Glow - Low Blue Light", // Tên hiển thị của theme
-	"semanticHighlighting": true, // Bật tính năng tô màu ngữ nghĩa nâng cao (semantic highlighting)
-
+	"name": "TreZinkit Night Owl",
+	"type": "dark",
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"parameter": "#e0af68",
+		"variable": "#c0caf5",
+		"variable.readonly": "#c0caf5",
+		"property": "#7dcfff",
+		"property.readonly": "#7dcfff",
+		"function": "#7aa2f7",
+		"method": "#7aa2f7",
+		"class": "#c0caf5",
+		"interface": "#2ac3de",
+		"type": "#2ac3de",
+		"enum": "#ff9e64",
+		"enumMember": "#ff9e64",
+		"namespace": "#bb9af7"
+	},
 	"colors": {
 		// ═══════════════════════════════════════════════════════════
-		// EDITOR - Khu vực soạn thảo code chính
+		// EDITOR - BACKGROUND & FOREGROUND
 		// ═══════════════════════════════════════════════════════════
-		"editor.background": "#000018", // Màu nền của editor //check 
-		"editor.foreground": "#caf0f8", // Màu chữ mặc định trong editor
-		"editor.lineHighlightBackground": "#183048", // Màu nền của dòng hiện tại (dòng con trỏ đang đứng)
-		"editor.selectionBackground": "#183048", // Màu nền khi bôi đen văn bản (50 = 31% opacity)
-		"editor.wordHighlightBackground": "#181830", // Màu nền khi highlight từ giống nhau (40 = 25% opacity)
-		"editorCursor.foreground": "#78B4D2", // Màu con trỏ nhấp nháy (caret)
-		"editorLineNumber.foreground": "#3C5A78", // Màu số dòng (line number) bình thường
-		"editorLineNumber.activeForeground": "#7896B4", // Màu số dòng của dòng hiện tại
-		"editorIndentGuide.background": "#1E3C5A", // Màu đường kẻ thụt lề (indentation guide) mặc định
-		"editorIndentGuide.activeBackground": "#3C5A78", // Màu đường kẻ thụt lề của khối code hiện tại
-		"editorBracketMatch.background": "#3C5A9640", // Màu nền highlight cặp ngoặc khớp nhau
-		"editorBracketMatch.border": "#5A96B4", // Màu viền của cặp ngoặc khớp nhau
+		"editor.background": "#24283b",
+		"editor.foreground": "#c0caf5",
+		"editorLineNumber.foreground": "#3b4261",
+		"editorLineNumber.activeForeground": "#737aa2",
+		"editorCursor.foreground": "#c0caf5",
+		"editor.selectionBackground": "#515c7e40",
+		"editor.selectionHighlightBackground": "#515c7e30",
+		"editor.inactiveSelectionBackground": "#515c7e30",
+		"editor.wordHighlightBackground": "#515c7e30",
+		"editor.wordHighlightStrongBackground": "#515c7e40",
+		"editor.findMatchBackground": "#e0af6850",
+		"editor.findMatchHighlightBackground": "#e0af6830",
+		"editor.findMatchBorder": "#e0af68",
+		"editor.hoverHighlightBackground": "#515c7e30",
+		"editor.lineHighlightBackground": "#292e42",
+		"editor.lineHighlightBorder": "#292e4200",
+		"editor.rangeHighlightBackground": "#515c7e20",
+		"editorWhitespace.foreground": "#3b4261",
+		"editorIndentGuide.background": "#3b4261",
+		"editorIndentGuide.activeBackground": "#565f89",
+		"editorRuler.foreground": "#3b4261",
+		"editorBracketMatch.background": "#515c7e40",
+		"editorBracketMatch.border": "#7aa2f7",
 
 		// ═══════════════════════════════════════════════════════════
-		// ACTIVITY BAR - Thanh biểu tượng dọc bên trái cùng
-		// (Explorer, Search, Git, Debug, Extensions...)
+		// EDITOR - BRACKET PAIR COLORIZATION
 		// ═══════════════════════════════════════════════════════════
-		"activityBar.background": "#1a2a42", // Màu nền của Activity Bar
-		"activityBar.foreground": "#78B4D2", // Màu các biểu tượng (icons) trên Activity Bar
-		"activityBarBadge.background": "#3C96B4", // Màu nền của badge thông báo (số lỗi, số thay đổi Git...)
-		"activityBarBadge.foreground": "#1E1E1E", // Màu chữ/số trên badge thông báo
+		"editorBracketHighlight.foreground1": "#e0af68",
+		"editorBracketHighlight.foreground2": "#bb9af7",
+		"editorBracketHighlight.foreground3": "#7aa2f7",
+		"editorBracketHighlight.foreground4": "#2ac3de",
+		"editorBracketHighlight.foreground5": "#9ece6a",
+		"editorBracketHighlight.foreground6": "#f7768e",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#f7768e",
 
 		// ═══════════════════════════════════════════════════════════
-		// SIDE BAR - Thanh bên (Explorer, Search Results, Git Changes...)
+		// EDITOR - GUTTER
 		// ═══════════════════════════════════════════════════════════
-		"sideBar.background": "#181830", // Màu nền của Side Bar
-		"sideBar.foreground": "#fff", // Màu chữ mặc định trong Side Bar
-		"sideBarTitle.foreground": "#96D2F0", // Màu tiêu đề chính (VD: "EXPLORER")
-		"sideBarSectionHeader.background": "#1E1E3C", // Màu nền của header từng section (VD: "OPEN EDITORS")
-		"sideBarSectionHeader.foreground": "#78B4B4", // Màu chữ của header từng section
+		"editorGutter.background": "#24283b",
+		"editorGutter.modifiedBackground": "#e0af68",
+		"editorGutter.addedBackground": "#9ece6a",
+		"editorGutter.deletedBackground": "#f7768e",
+		"editorGutter.commentRangeForeground": "#565f89",
+		"editorGutter.foldingControlForeground": "#c0caf5",
 
 		// ═══════════════════════════════════════════════════════════
-		// TABS - Các tab file đang mở
+		// EDITOR - OVERVIEW RULER
 		// ═══════════════════════════════════════════════════════════
-		"tab.activeBackground": "#1E3C5A", // Màu nền của tab đang được chọn (active)
-		"tab.activeForeground": "#B4F0F0", // Màu chữ của tab đang được chọn
-		"tab.inactiveBackground": "#1E1E3C", // Màu nền của các tab không được chọn
-		"tab.inactiveForeground": "#5A7896", // Màu chữ của các tab không được chọn
-		"tab.border": "#001E3C", // Màu viền phân cách giữa các tab
-		"editorGroupHeader.tabsBackground": "#001E1E", // Màu nền của thanh chứa tất cả các tab
+		"editorOverviewRuler.border": "#1a1b26",
+		"editorOverviewRuler.findMatchForeground": "#e0af6880",
+		"editorOverviewRuler.rangeHighlightForeground": "#e0af6880",
+		"editorOverviewRuler.selectionHighlightForeground": "#c0caf550",
+		"editorOverviewRuler.wordHighlightForeground": "#7aa2f780",
+		"editorOverviewRuler.wordHighlightStrongForeground": "#9ece6a80",
+		"editorOverviewRuler.modifiedForeground": "#e0af68",
+		"editorOverviewRuler.addedForeground": "#9ece6a",
+		"editorOverviewRuler.deletedForeground": "#f7768e",
+		"editorOverviewRuler.errorForeground": "#f7768e",
+		"editorOverviewRuler.warningForeground": "#e0af68",
+		"editorOverviewRuler.infoForeground": "#7aa2f7",
 
 		// ═══════════════════════════════════════════════════════════
-		// STATUS BAR - Thanh trạng thái dưới cùng
-		// (Hiển thị branch Git, ngôn ngữ, encoding, errors...)
+		// EDITOR - ERRORS & WARNINGS
 		// ═══════════════════════════════════════════════════════════
-		"statusBar.background": "#001E3C", // Màu nền mặc định của Status Bar
-		"statusBar.foreground": "#78B4B4", // Màu chữ mặc định trên Status Bar
-		"statusBar.debuggingBackground": "#1E5A78", // Màu nền khi đang chạy Debug mode
-		"statusBar.noFolderBackground": "#1E1E3C", // Màu nền khi chưa mở folder/workspace nào
+		"editorError.foreground": "#f7768e",
+		"editorWarning.foreground": "#e0af68",
+		"editorInfo.foreground": "#7aa2f7",
+		"editorHint.foreground": "#2ac3de",
+		"problemsErrorIcon.foreground": "#f7768e",
+		"problemsWarningIcon.foreground": "#e0af68",
+		"problemsInfoIcon.foreground": "#7aa2f7",
 
 		// ═══════════════════════════════════════════════════════════
-		// TITLE BAR - Thanh tiêu đề cửa sổ (trên cùng)
+		// EDITOR - DIFF EDITOR
 		// ═══════════════════════════════════════════════════════════
-		"titleBar.activeBackground": "#001E1E", // Màu nền khi cửa sổ VS Code đang active (focus)
-		"titleBar.activeForeground": "#7896B4", // Màu chữ khi cửa sổ đang active
-		"titleBar.inactiveBackground": "#1E1E1E", // Màu nền khi cửa sổ không active (unfocused)
+		"diffEditor.insertedTextBackground": "#9ece6a20",
+		"diffEditor.insertedLineBackground": "#9ece6a20",
+		"diffEditor.removedTextBackground": "#f7768e20",
+		"diffEditor.removedLineBackground": "#f7768e20",
+		"diffEditor.border": "#3b4261",
+		"diffEditor.diagonalFill": "#3b4261",
+		"diffEditorGutter.insertedLineBackground": "#9ece6a30",
+		"diffEditorGutter.removedLineBackground": "#f7768e30",
 
 		// ═══════════════════════════════════════════════════════════
-		// INPUT - Các ô nhập liệu (Search box, Replace box...)
+		// EDITOR - MINIMAP
 		// ═══════════════════════════════════════════════════════════
-		"input.background": "#1E1E3C", // Màu nền của ô input
-		"input.foreground": "#96B4D2", // Màu chữ khi gõ trong ô input
-		"input.border": "#3C5A78", // Màu viền của ô input
-		"input.placeholderForeground": "#5A7896", // Màu chữ placeholder (gợi ý mờ)
+		"minimap.findMatchHighlight": "#e0af68",
+		"minimap.selectionHighlight": "#515c7e",
+		"minimap.errorHighlight": "#f7768e",
+		"minimap.warningHighlight": "#e0af68",
+		"minimap.background": "#24283b",
+		"minimapSlider.background": "#515c7e30",
+		"minimapSlider.hoverBackground": "#515c7e50",
+		"minimapSlider.activeBackground": "#515c7e70",
+		"minimapGutter.addedBackground": "#9ece6a",
+		"minimapGutter.modifiedBackground": "#e0af68",
+		"minimapGutter.deletedBackground": "#f7768e",
 
 		// ═══════════════════════════════════════════════════════════
-		// DROPDOWN - Menu thả xuống (Select box)
+		// EDITOR - SCROLLBAR
 		// ═══════════════════════════════════════════════════════════
-		"dropdown.background": "#1E1E3C", // Màu nền của dropdown
-		"dropdown.foreground": "#96B4D2", // Màu chữ trong dropdown
-		"dropdown.border": "#3C5A78", // Màu viền của dropdown
+		"scrollbar.shadow": "#00000050",
+		"scrollbarSlider.background": "#515c7e40",
+		"scrollbarSlider.hoverBackground": "#515c7e60",
+		"scrollbarSlider.activeBackground": "#515c7e80",
 
 		// ═══════════════════════════════════════════════════════════
-		// BUTTON - Các nút bấm
+		// EDITOR - WIDGETS
 		// ═══════════════════════════════════════════════════════════
-		"button.background": "#1E5A78", // Màu nền mặc định của button
-		"button.foreground": "#B4F0F0", // Màu chữ trên button
-		"button.hoverBackground": "#3C7896", // Màu nền khi hover (di chuột qua) button
+		"editorWidget.background": "#1a1b26",
+		"editorWidget.foreground": "#c0caf5",
+		"editorWidget.border": "#3b4261",
+		"editorWidget.resizeBorder": "#7aa2f7",
+		"editorSuggestWidget.background": "#1a1b26",
+		"editorSuggestWidget.border": "#3b4261",
+		"editorSuggestWidget.foreground": "#c0caf5",
+		"editorSuggestWidget.highlightForeground": "#7aa2f7",
+		"editorSuggestWidget.selectedBackground": "#515c7e40",
+		"editorSuggestWidget.focusHighlightForeground": "#7aa2f7",
+		"editorSuggestWidget.selectedForeground": "#c0caf5",
+		"editorSuggestWidget.selectedIconForeground": "#c0caf5",
+		"editorHoverWidget.background": "#1a1b26",
+		"editorHoverWidget.border": "#3b4261",
+		"editorHoverWidget.foreground": "#c0caf5",
+		"editorHoverWidget.highlightForeground": "#7aa2f7",
+		"editorHoverWidget.statusBarBackground": "#24283b",
 
 		// ═══════════════════════════════════════════════════════════
-		// SCROLLBAR - Thanh cuộn
+		// PEEK VIEW
 		// ═══════════════════════════════════════════════════════════
-		"scrollbarSlider.background": "#3C5A7850", // Màu thanh cuộn bình thường (50 = 31% opacity)
-		"scrollbarSlider.hoverBackground": "#5A789670", // Màu thanh cuộn khi hover (70 = 44% opacity)
-		"scrollbarSlider.activeBackground": "#7896B490", // Màu thanh cuộn khi đang kéo (90 = 56% opacity)
+		"peekView.border": "#7aa2f7",
+		"peekViewEditor.background": "#1a1b26",
+		"peekViewEditor.matchHighlightBackground": "#e0af6840",
+		"peekViewEditor.matchHighlightBorder": "#e0af68",
+		"peekViewEditorGutter.background": "#1a1b26",
+		"peekViewResult.background": "#1a1b26",
+		"peekViewResult.fileForeground": "#c0caf5",
+		"peekViewResult.lineForeground": "#9aa5ce",
+		"peekViewResult.matchHighlightBackground": "#e0af6840",
+		"peekViewResult.selectionBackground": "#515c7e40",
+		"peekViewResult.selectionForeground": "#c0caf5",
+		"peekViewTitle.background": "#24283b",
+		"peekViewTitleDescription.foreground": "#9aa5ce",
+		"peekViewTitleLabel.foreground": "#c0caf5",
 
 		// ═══════════════════════════════════════════════════════════
-		// LIST & TREE - Danh sách file/folder trong Explorer, Search Results...
+		// WORKBENCH - TITLE BAR
 		// ═══════════════════════════════════════════════════════════
-		"list.activeSelectionBackground": "#1E3C5A", // Màu nền item đang được chọn và focus
-		"list.activeSelectionForeground": "#B4F0F0", // Màu chữ item đang được chọn và focus
-		"list.hoverBackground": "#1E3C3C", // Màu nền khi hover qua item
-		"list.focusBackground": "#1E3C78", // Màu nền item đang focus (dùng bàn phím điều hướng)
+		"titleBar.activeBackground": "#1a1b26",
+		"titleBar.activeForeground": "#c0caf5",
+		"titleBar.inactiveBackground": "#1a1b26",
+		"titleBar.inactiveForeground": "#565f89",
+		"titleBar.border": "#1a1b26",
 
 		// ═══════════════════════════════════════════════════════════
-		// TERMINAL - Terminal tích hợp
+		// WORKBENCH - ACTIVITY BAR
 		// ═══════════════════════════════════════════════════════════
-		"terminal.background": "#1E1E1E", // Màu nền của Terminal
-		"terminal.foreground": "#96B4D2", // Màu chữ mặc định trong Terminal
-		"terminalCursor.foreground": "#78B4D2", // Màu con trỏ trong Terminal
+		"activityBar.background": "#1a1b26",
+		"activityBar.foreground": "#c0caf5",
+		"activityBar.inactiveForeground": "#565f89",
+		"activityBar.border": "#1a1b26",
+		"activityBar.activeBorder": "#7aa2f7",
+		"activityBar.activeBackground": "#24283b",
+		"activityBarBadge.background": "#7aa2f7",
+		"activityBarBadge.foreground": "#1a1b26",
 
 		// ═══════════════════════════════════════════════════════════
-		// GIT DECORATIONS - Màu trạng thái file Git trong Explorer
+		// WORKBENCH - SIDE BAR
 		// ═══════════════════════════════════════════════════════════
-		"gitDecoration.modifiedResourceForeground": "#78B4D2", // Màu file đã sửa đổi (Modified - M)
-		"gitDecoration.deletedResourceForeground": "#7896B4", // Màu file đã xóa (Deleted - D)
-		"gitDecoration.untrackedResourceForeground": "#78B4B4", // Màu file chưa track (Untracked - U)
-		"gitDecoration.addedResourceForeground": "#5A96B4", // Màu file mới thêm vào Git (Added - A)
+		"sideBar.background": "#1a1b26",
+		"sideBar.foreground": "#9aa5ce",
+		"sideBar.border": "#1a1b26",
+		"sideBar.dropBackground": "#515c7e40",
+		"sideBarTitle.foreground": "#c0caf5",
+		"sideBarSectionHeader.background": "#1a1b26",
+		"sideBarSectionHeader.foreground": "#7aa2f7",
+		"sideBarSectionHeader.border": "#3b4261",
 
 		// ═══════════════════════════════════════════════════════════
-		// MISCELLANEOUS - Các thiết lập khác
+		// WORKBENCH - LIST & TREES
 		// ═══════════════════════════════════════════════════════════
-		"focusBorder": "#3C7896", // Màu viền khi một element được focus (VD: ô tìm kiếm)
-		"widget.shadow": "#00001E80" // Màu đổ bóng của popup/widget (Command Palette, Quick Open...)
+		"list.activeSelectionBackground": "#515c7e40",
+		"list.activeSelectionForeground": "#c0caf5",
+		"list.activeSelectionIconForeground": "#c0caf5",
+		"list.inactiveSelectionBackground": "#515c7e30",
+		"list.inactiveSelectionForeground": "#c0caf5",
+		"list.inactiveSelectionIconForeground": "#c0caf5",
+		"list.hoverBackground": "#515c7e20",
+		"list.hoverForeground": "#c0caf5",
+		"list.focusBackground": "#515c7e40",
+		"list.focusForeground": "#c0caf5",
+		"list.focusOutline": "#7aa2f7",
+		"list.focusAndSelectionOutline": "#7aa2f7",
+		"list.dropBackground": "#515c7e40",
+		"list.highlightForeground": "#7aa2f7",
+		"list.errorForeground": "#f7768e",
+		"list.warningForeground": "#e0af68",
+		"list.invalidItemForeground": "#f7768e",
+		"list.deemphasizedForeground": "#565f89",
+		"listFilterWidget.background": "#24283b",
+		"listFilterWidget.outline": "#7aa2f7",
+		"listFilterWidget.noMatchesOutline": "#f7768e",
+		"tree.indentGuidesStroke": "#3b4261",
+		"tree.tableColumnsBorder": "#3b4261",
+
+		// ═══════════════════════════════════════════════════════════
+		// WORKBENCH - TABS
+		// ═══════════════════════════════════════════════════════════
+		"editorGroupHeader.tabsBackground": "#1a1b26",
+		"editorGroupHeader.tabsBorder": "#1a1b26",
+		"editorGroupHeader.noTabsBackground": "#1a1b26",
+		"editorGroupHeader.border": "#1a1b26",
+		"editorGroup.border": "#3b4261",
+		"editorGroup.dropBackground": "#515c7e40",
+		"editorGroup.emptyBackground": "#1a1b26",
+		"editorGroup.focusedEmptyBorder": "#7aa2f7",
+		"tab.activeBackground": "#24283b",
+		"tab.activeForeground": "#c0caf5",
+		"tab.activeBorder": "#24283b",
+		"tab.activeBorderTop": "#7aa2f7",
+		"tab.inactiveBackground": "#1a1b26",
+		"tab.inactiveForeground": "#565f89",
+		"tab.unfocusedActiveBackground": "#24283b",
+		"tab.unfocusedActiveForeground": "#9aa5ce",
+		"tab.unfocusedActiveBorderTop": "#3b4261",
+		"tab.unfocusedInactiveBackground": "#1a1b26",
+		"tab.unfocusedInactiveForeground": "#565f89",
+		"tab.hoverBackground": "#292e42",
+		"tab.hoverForeground": "#c0caf5",
+		"tab.border": "#1a1b26",
+		"tab.lastPinnedBorder": "#3b4261",
+		"tab.unfocusedHoverBackground": "#292e42",
+
+		// ═══════════════════════════════════════════════════════════
+		// WORKBENCH - BREADCRUMBS
+		// ═══════════════════════════════════════════════════════════
+		"breadcrumb.background": "#24283b",
+		"breadcrumb.foreground": "#9aa5ce",
+		"breadcrumb.focusForeground": "#c0caf5",
+		"breadcrumb.activeSelectionForeground": "#c0caf5",
+		"breadcrumbPicker.background": "#1a1b26",
+
+		// ═══════════════════════════════════════════════════════════
+		// WORKBENCH - STATUS BAR
+		// ═══════════════════════════════════════════════════════════
+		"statusBar.background": "#1a1b26",
+		"statusBar.foreground": "#9aa5ce",
+		"statusBar.border": "#1a1b26",
+		"statusBar.debuggingBackground": "#f7768e",
+		"statusBar.debuggingForeground": "#1a1b26",
+		"statusBar.debuggingBorder": "#f7768e",
+		"statusBar.noFolderBackground": "#1a1b26",
+		"statusBar.noFolderForeground": "#9aa5ce",
+		"statusBar.noFolderBorder": "#1a1b26",
+		"statusBarItem.activeBackground": "#515c7e40",
+		"statusBarItem.hoverBackground": "#515c7e30",
+		"statusBarItem.prominentBackground": "#3b4261",
+		"statusBarItem.prominentForeground": "#c0caf5",
+		"statusBarItem.prominentHoverBackground": "#515c7e40",
+		"statusBarItem.remoteBackground": "#7aa2f7",
+		"statusBarItem.remoteForeground": "#1a1b26",
+		"statusBarItem.errorBackground": "#f7768e",
+		"statusBarItem.errorForeground": "#1a1b26",
+		"statusBarItem.warningBackground": "#e0af68",
+		"statusBarItem.warningForeground": "#1a1b26",
+
+		// ═══════════════════════════════════════════════════════════
+		// WORKBENCH - PANEL
+		// ═══════════════════════════════════════════════════════════
+		"panel.background": "#1a1b26",
+		"panel.border": "#3b4261",
+		"panel.dropBorder": "#7aa2f7",
+		"panelTitle.activeBorder": "#7aa2f7",
+		"panelTitle.activeForeground": "#c0caf5",
+		"panelTitle.inactiveForeground": "#565f89",
+		"panelInput.border": "#3b4261",
+		"panelSection.border": "#3b4261",
+		"panelSection.dropBackground": "#515c7e40",
+		"panelSectionHeader.background": "#24283b",
+		"panelSectionHeader.foreground": "#c0caf5",
+		"panelSectionHeader.border": "#3b4261",
+
+		// ═══════════════════════════════════════════════════════════
+		// TERMINAL
+		// ═══════════════════════════════════════════════════════════
+		"terminal.background": "#1a1b26",
+		"terminal.foreground": "#c0caf5",
+		"terminal.border": "#3b4261",
+		"terminal.selectionBackground": "#515c7e40",
+		"terminal.inactiveSelectionBackground": "#515c7e30",
+		"terminalCursor.background": "#1a1b26",
+		"terminalCursor.foreground": "#c0caf5",
+		"terminal.ansiBlack": "#1a1b26",
+		"terminal.ansiRed": "#f7768e",
+		"terminal.ansiGreen": "#9ece6a",
+		"terminal.ansiYellow": "#e0af68",
+		"terminal.ansiBlue": "#7aa2f7",
+		"terminal.ansiMagenta": "#bb9af7",
+		"terminal.ansiCyan": "#7dcfff",
+		"terminal.ansiWhite": "#c0caf5",
+		"terminal.ansiBrightBlack": "#565f89",
+		"terminal.ansiBrightRed": "#f7768e",
+		"terminal.ansiBrightGreen": "#9ece6a",
+		"terminal.ansiBrightYellow": "#e0af68",
+		"terminal.ansiBrightBlue": "#7aa2f7",
+		"terminal.ansiBrightMagenta": "#bb9af7",
+		"terminal.ansiBrightCyan": "#7dcfff",
+		"terminal.ansiBrightWhite": "#c0caf5",
+		"terminal.findMatchBackground": "#e0af6850",
+		"terminal.findMatchBorder": "#e0af68",
+		"terminal.findMatchHighlightBackground": "#e0af6830",
+		"terminal.findMatchHighlightBorder": "#e0af6800",
+		"terminalCommandDecoration.defaultBackground": "#565f89",
+		"terminalCommandDecoration.successBackground": "#9ece6a",
+		"terminalCommandDecoration.errorBackground": "#f7768e",
+		"terminalOverviewRuler.cursorForeground": "#c0caf5",
+		"terminalOverviewRuler.findMatchForeground": "#e0af68",
+
+		// ═══════════════════════════════════════════════════════════
+		// INPUT & DROPDOWN
+		// ═══════════════════════════════════════════════════════════
+		"input.background": "#1a1b26",
+		"input.foreground": "#c0caf5",
+		"input.border": "#3b4261",
+		"input.placeholderForeground": "#565f89",
+		"inputOption.activeBackground": "#7aa2f730",
+		"inputOption.activeBorder": "#7aa2f7",
+		"inputOption.activeForeground": "#c0caf5",
+		"inputOption.hoverBackground": "#515c7e30",
+		"inputValidation.errorBackground": "#f7768e30",
+		"inputValidation.errorBorder": "#f7768e",
+		"inputValidation.errorForeground": "#f7768e",
+		"inputValidation.infoBackground": "#7aa2f730",
+		"inputValidation.infoBorder": "#7aa2f7",
+		"inputValidation.infoForeground": "#7aa2f7",
+		"inputValidation.warningBackground": "#e0af6830",
+		"inputValidation.warningBorder": "#e0af68",
+		"inputValidation.warningForeground": "#e0af68",
+		"dropdown.background": "#1a1b26",
+		"dropdown.foreground": "#c0caf5",
+		"dropdown.border": "#3b4261",
+		"dropdown.listBackground": "#1a1b26",
+
+		// ═══════════════════════════════════════════════════════════
+		// BUTTON
+		// ═══════════════════════════════════════════════════════════
+		"button.background": "#7aa2f7",
+		"button.foreground": "#1a1b26",
+		"button.hoverBackground": "#89b4fa",
+		"button.secondaryBackground": "#3b4261",
+		"button.secondaryForeground": "#c0caf5",
+		"button.secondaryHoverBackground": "#515c7e",
+		"button.border": "#7aa2f700",
+
+		// ═══════════════════════════════════════════════════════════
+		// CHECKBOX
+		// ═══════════════════════════════════════════════════════════
+		"checkbox.background": "#1a1b26",
+		"checkbox.foreground": "#7aa2f7",
+		"checkbox.border": "#3b4261",
+
+		// ═══════════════════════════════════════════════════════════
+		// BADGE
+		// ═══════════════════════════════════════════════════════════
+		"badge.background": "#7aa2f7",
+		"badge.foreground": "#1a1b26",
+
+		// ═══════════════════════════════════════════════════════════
+		// PROGRESS BAR
+		// ═══════════════════════════════════════════════════════════
+		"progressBar.background": "#7aa2f7",
+
+		// ═══════════════════════════════════════════════════════════
+		// NOTIFICATION
+		// ═══════════════════════════════════════════════════════════
+		"notifications.background": "#1a1b26",
+		"notifications.foreground": "#c0caf5",
+		"notifications.border": "#3b4261",
+		"notificationCenter.border": "#3b4261",
+		"notificationCenterHeader.background": "#24283b",
+		"notificationCenterHeader.foreground": "#c0caf5",
+		"notificationToast.border": "#3b4261",
+		"notificationsErrorIcon.foreground": "#f7768e",
+		"notificationsWarningIcon.foreground": "#e0af68",
+		"notificationsInfoIcon.foreground": "#7aa2f7",
+		"notificationLink.foreground": "#7aa2f7",
+
+		// ═══════════════════════════════════════════════════════════
+		// COMMAND CENTER & QUICK INPUT
+		// ═══════════════════════════════════════════════════════════
+		"commandCenter.foreground": "#c0caf5",
+		"commandCenter.activeForeground": "#c0caf5",
+		"commandCenter.background": "#24283b",
+		"commandCenter.activeBackground": "#515c7e30",
+		"commandCenter.border": "#3b4261",
+		"commandCenter.inactiveForeground": "#565f89",
+		"commandCenter.inactiveBorder": "#3b4261",
+		"commandCenter.activeBorder": "#7aa2f7",
+		"quickInput.background": "#1a1b26",
+		"quickInput.foreground": "#c0caf5",
+		"quickInputList.focusBackground": "#515c7e40",
+		"quickInputList.focusForeground": "#c0caf5",
+		"quickInputList.focusIconForeground": "#c0caf5",
+		"quickInputTitle.background": "#24283b",
+		"pickerGroup.border": "#3b4261",
+		"pickerGroup.foreground": "#7aa2f7",
+		"keybindingLabel.background": "#3b4261",
+		"keybindingLabel.foreground": "#c0caf5",
+		"keybindingLabel.border": "#565f89",
+		"keybindingLabel.bottomBorder": "#565f89",
+
+		// ═══════════════════════════════════════════════════════════
+		// GIT DECORATIONS
+		// ═══════════════════════════════════════════════════════════
+		"gitDecoration.addedResourceForeground": "#9ece6a",
+		"gitDecoration.modifiedResourceForeground": "#e0af68",
+		"gitDecoration.deletedResourceForeground": "#f7768e",
+		"gitDecoration.renamedResourceForeground": "#7dcfff",
+		"gitDecoration.stageModifiedResourceForeground": "#e0af68",
+		"gitDecoration.stageDeletedResourceForeground": "#f7768e",
+		"gitDecoration.untrackedResourceForeground": "#9ece6a",
+		"gitDecoration.ignoredResourceForeground": "#565f89",
+		"gitDecoration.conflictingResourceForeground": "#f7768e",
+		"gitDecoration.submoduleResourceForeground": "#7dcfff",
+
+		// ═══════════════════════════════════════════════════════════
+		// MERGE CONFLICTS
+		// ═══════════════════════════════════════════════════════════
+		"merge.currentHeaderBackground": "#9ece6a40",
+		"merge.currentContentBackground": "#9ece6a20",
+		"merge.incomingHeaderBackground": "#7aa2f740",
+		"merge.incomingContentBackground": "#7aa2f720",
+		"merge.border": "#3b4261",
+		"merge.commonHeaderBackground": "#e0af6840",
+		"merge.commonContentBackground": "#e0af6820",
+		"editorOverviewRuler.currentContentForeground": "#9ece6a",
+		"editorOverviewRuler.incomingContentForeground": "#7aa2f7",
+		"editorOverviewRuler.commonContentForeground": "#e0af68",
+		"mergeEditor.change.background": "#7aa2f720",
+		"mergeEditor.change.word.background": "#7aa2f740",
+		"mergeEditor.conflict.unhandledUnfocused.border": "#e0af6880",
+		"mergeEditor.conflict.unhandledFocused.border": "#e0af68",
+		"mergeEditor.conflict.handledUnfocused.border": "#9ece6a80",
+		"mergeEditor.conflict.handledFocused.border": "#9ece6a",
+		"mergeEditor.conflict.handled.minimapOverViewRuler": "#9ece6a",
+		"mergeEditor.conflict.unhandled.minimapOverViewRuler": "#e0af68",
+
+		// ═══════════════════════════════════════════════════════════
+		// DEBUG
+		// ═══════════════════════════════════════════════════════════
+		"debugToolBar.background": "#1a1b26",
+		"debugToolBar.border": "#3b4261",
+		"debugIcon.breakpointForeground": "#f7768e",
+		"debugIcon.breakpointDisabledForeground": "#565f89",
+		"debugIcon.breakpointUnverifiedForeground": "#e0af68",
+		"debugIcon.breakpointCurrentStackframeForeground": "#9ece6a",
+		"debugIcon.breakpointStackframeForeground": "#565f89",
+		"debugIcon.startForeground": "#9ece6a",
+		"debugIcon.pauseForeground": "#e0af68",
+		"debugIcon.stopForeground": "#f7768e",
+		"debugIcon.disconnectForeground": "#f7768e",
+		"debugIcon.restartForeground": "#9ece6a",
+		"debugIcon.stepOverForeground": "#7aa2f7",
+		"debugIcon.stepIntoForeground": "#7aa2f7",
+		"debugIcon.stepOutForeground": "#7aa2f7",
+		"debugIcon.continueForeground": "#9ece6a",
+		"debugIcon.stepBackForeground": "#7aa2f7",
+		"debugConsole.infoForeground": "#7aa2f7",
+		"debugConsole.warningForeground": "#e0af68",
+		"debugConsole.errorForeground": "#f7768e",
+		"debugConsole.sourceForeground": "#c0caf5",
+		"debugConsoleInputIcon.foreground": "#bb9af7",
+		"debugTokenExpression.name": "#7dcfff",
+		"debugTokenExpression.value": "#9ece6a",
+		"debugTokenExpression.string": "#9ece6a",
+		"debugTokenExpression.boolean": "#ff9e64",
+		"debugTokenExpression.number": "#ff9e64",
+		"debugTokenExpression.error": "#f7768e",
+
+		// ═══════════════════════════════════════════════════════════
+		// TESTING
+		// ═══════════════════════════════════════════════════════════
+		"testing.iconFailed": "#f7768e",
+		"testing.iconErrored": "#f7768e",
+		"testing.iconPassed": "#9ece6a",
+		"testing.iconQueued": "#e0af68",
+		"testing.iconUnset": "#565f89",
+		"testing.iconSkipped": "#565f89",
+		"testing.runAction": "#9ece6a",
+		"testing.peekBorder": "#f7768e",
+		"testing.peekHeaderBackground": "#f7768e20",
+		"testing.message.error.decorationForeground": "#f7768e",
+		"testing.message.error.lineBackground": "#f7768e20",
+		"testing.message.info.decorationForeground": "#7aa2f7",
+
+		// ═══════════════════════════════════════════════════════════
+		// WELCOME PAGE
+		// ═══════════════════════════════════════════════════════════
+		"welcomePage.background": "#1a1b26",
+		"welcomePage.tileBackground": "#24283b",
+		"welcomePage.tileHoverBackground": "#292e42",
+		"welcomePage.tileBorder": "#3b4261",
+		"welcomePage.progress.background": "#3b4261",
+		"welcomePage.progress.foreground": "#7aa2f7",
+		"walkThrough.embeddedEditorBackground": "#1a1b26",
+		"walkthrough.stepTitle.foreground": "#c0caf5",
+
+		// ═══════════════════════════════════════════════════════════
+		// SETTINGS
+		// ═══════════════════════════════════════════════════════════
+		"settings.headerForeground": "#c0caf5",
+		"settings.modifiedItemIndicator": "#7aa2f7",
+		"settings.dropdownBackground": "#1a1b26",
+		"settings.dropdownForeground": "#c0caf5",
+		"settings.dropdownBorder": "#3b4261",
+		"settings.dropdownListBorder": "#3b4261",
+		"settings.checkboxBackground": "#1a1b26",
+		"settings.checkboxForeground": "#7aa2f7",
+		"settings.checkboxBorder": "#3b4261",
+		"settings.textInputBackground": "#1a1b26",
+		"settings.textInputForeground": "#c0caf5",
+		"settings.textInputBorder": "#3b4261",
+		"settings.numberInputBackground": "#1a1b26",
+		"settings.numberInputForeground": "#c0caf5",
+		"settings.numberInputBorder": "#3b4261",
+		"settings.rowHoverBackground": "#515c7e20",
+		"settings.focusedRowBackground": "#515c7e30",
+		"settings.focusedRowBorder": "#7aa2f7",
+		"settings.sashBorder": "#3b4261",
+
+		// ═══════════════════════════════════════════════════════════
+		// EXTENSION
+		// ═══════════════════════════════════════════════════════════
+		"extensionButton.prominentBackground": "#7aa2f7",
+		"extensionButton.prominentForeground": "#1a1b26",
+		"extensionButton.prominentHoverBackground": "#89b4fa",
+		"extensionBadge.remoteBackground": "#7aa2f7",
+		"extensionBadge.remoteForeground": "#1a1b26",
+		"extensionIcon.starForeground": "#e0af68",
+		"extensionIcon.verifiedForeground": "#9ece6a",
+		"extensionIcon.preReleaseForeground": "#e0af68",
+		"extensionIcon.sponsorForeground": "#f7768e",
+
+		// ═══════════════════════════════════════════════════════════
+		// SYMBOL ICONS
+		// ═══════════════════════════════════════════════════════════
+		"symbolIcon.arrayForeground": "#ff9e64",
+		"symbolIcon.booleanForeground": "#ff9e64",
+		"symbolIcon.classForeground": "#e0af68",
+		"symbolIcon.colorForeground": "#7dcfff",
+		"symbolIcon.constantForeground": "#ff9e64",
+		"symbolIcon.constructorForeground": "#7aa2f7",
+		"symbolIcon.enumeratorForeground": "#ff9e64",
+		"symbolIcon.enumeratorMemberForeground": "#7dcfff",
+		"symbolIcon.eventForeground": "#e0af68",
+		"symbolIcon.fieldForeground": "#7dcfff",
+		"symbolIcon.fileForeground": "#c0caf5",
+		"symbolIcon.folderForeground": "#e0af68",
+		"symbolIcon.functionForeground": "#7aa2f7",
+		"symbolIcon.interfaceForeground": "#2ac3de",
+		"symbolIcon.keyForeground": "#9ece6a",
+		"symbolIcon.keywordForeground": "#bb9af7",
+		"symbolIcon.methodForeground": "#7aa2f7",
+		"symbolIcon.moduleForeground": "#c0caf5",
+		"symbolIcon.namespaceForeground": "#c0caf5",
+		"symbolIcon.nullForeground": "#f7768e",
+		"symbolIcon.numberForeground": "#ff9e64",
+		"symbolIcon.objectForeground": "#e0af68",
+		"symbolIcon.operatorForeground": "#7dcfff",
+		"symbolIcon.packageForeground": "#ff9e64",
+		"symbolIcon.propertyForeground": "#7dcfff",
+		"symbolIcon.referenceForeground": "#ff9e64",
+		"symbolIcon.snippetForeground": "#9ece6a",
+		"symbolIcon.stringForeground": "#9ece6a",
+		"symbolIcon.structForeground": "#e0af68",
+		"symbolIcon.textForeground": "#9aa5ce",
+		"symbolIcon.typeParameterForeground": "#2ac3de",
+		"symbolIcon.unitForeground": "#ff9e64",
+		"symbolIcon.variableForeground": "#c0caf5",
+
+		// ═══════════════════════════════════════════════════════════
+		// CHARTS
+		// ═══════════════════════════════════════════════════════════
+		"charts.foreground": "#c0caf5",
+		"charts.lines": "#c0caf5",
+		"charts.red": "#f7768e",
+		"charts.blue": "#7aa2f7",
+		"charts.yellow": "#e0af68",
+		"charts.orange": "#ff9e64",
+		"charts.green": "#9ece6a",
+		"charts.purple": "#bb9af7",
+
+		// ═══════════════════════════════════════════════════════════
+		// PORTS
+		// ═══════════════════════════════════════════════════════════
+		"ports.iconRunningProcessForeground": "#9ece6a",
+
+		// ═══════════════════════════════════════════════════════════
+		// MISC
+		// ═══════════════════════════════════════════════════════════
+		"focusBorder": "#7aa2f7",
+		"foreground": "#c0caf5",
+		"disabledForeground": "#565f89",
+		"widget.shadow": "#00000050",
+		"selection.background": "#515c7e60",
+		"descriptionForeground": "#9aa5ce",
+		"errorForeground": "#f7768e",
+		"icon.foreground": "#c0caf5",
+		"sash.hoverBorder": "#7aa2f7"
 	},
-
 	"tokenColors": [
 		// ═══════════════════════════════════════════════════════════
-		// SYNTAX HIGHLIGHTING - Tô màu cú pháp code
+		// COMMENTS
 		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Comments",
+			"scope": ["comment", "punctuation.definition.comment", "comment.block", "comment.line", "comment.block.documentation"],
+			"settings": {
+				"foreground": "#565f89",
+				"fontStyle": "italic"
+			}
+		},
 
+		// ═══════════════════════════════════════════════════════════
+		// KEYWORDS, HTML ELEMENTS, REGEX GROUP, CSS UNITS (Terminal Red)
+		// ═══════════════════════════════════════════════════════════
 		{
-			"name": "Comment", // Chú thích trong code
-			"scope": [
-				"comment", // Tất cả các loại comment
-				"punctuation.definition.comment" // Ký tự bắt đầu comment (// hoặc /*)
-			],
+			"name": "This Keyword",
+			"scope": ["variable.language.this", "variable.language.self", "variable.language.super"],
 			"settings": {
-				"fontStyle": "italic", // Chữ nghiêng
-				"foreground": "#5A7896" // Màu xám xanh nhạt
+				"foreground": "#f7768e",
+				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Keywords", // Từ khóa ngôn ngữ
-			"scope": [
-				"keyword", // Từ khóa chung (if, else, for, while, return...)
-				"storage.type", // Khai báo kiểu (var, let, const, int, string...)
-				"storage.modifier" // Modifier (public, private, static, async...)
-			],
+			"name": "HTML Tags",
+			"scope": ["entity.name.tag", "punctuation.definition.tag"],
 			"settings": {
-				"foreground": "#78B4D2", // Màu xanh dương nhạt
-				"fontStyle": "bold" // Chữ đậm
+				"foreground": "#f7768e"
 			}
 		},
 		{
-			"name": "Strings", // Chuỗi văn bản
-			"scope": [
-				"string", // Chuỗi trong dấu ngoặc ("...", '...')
-				"constant.other.symbol", // Symbol (Ruby, Elixir...)
-				"markup.inserted.git_gutter" // Dòng được thêm trong Git diff
-			],
+			"name": "Regex Group Symbol",
+			"scope": ["punctuation.definition.group.regexp", "punctuation.definition.group.assertion.regexp"],
 			"settings": {
-				"foreground": "#78B4B4" // Màu xanh ngọc (teal)
+				"foreground": "#f7768e"
 			}
 		},
 		{
-			"name": "Functions/Methods", // Tên hàm/phương thức
-			"scope": [
-				"entity.name.function", // Tên hàm khi định nghĩa
-				"meta.function-call", // Khi gọi hàm
-				"variable.function", // Biến chứa function
-				"support.function", // Hàm built-in (console.log, print...)
-				"entity.name.method.js", // Method trong JS
-				"meta.class-method.js entity.name.function.js" // Method trong class JS
-			],
+			"name": "CSS Units",
+			"scope": ["keyword.other.unit", "keyword.other.unit.css", "keyword.other.unit.scss", "keyword.other.unit.less"],
 			"settings": {
-				"foreground": "#96D2F0" // Màu xanh dương sáng
+				"foreground": "#f7768e"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// NUMBERS, BOOLEANS, CONSTANTS (Terminal Orange)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Numbers and Boolean Constants",
+			"scope": ["constant.numeric", "constant.language.boolean", "constant.language.true", "constant.language.false", "constant.language.null", "constant.language.undefined", "constant.language.nan"],
+			"settings": {
+				"foreground": "#ff9e64"
 			}
 		},
 		{
-			"name": "Classes/Types", // Tên class/kiểu dữ liệu
-			"scope": [
-				"entity.name.class", // Tên class khi định nghĩa
-				"entity.name.type", // Tên type (TypeScript, Go...)
-				"support.class", // Class built-in (Date, Array, Promise...)
-				"support.type" // Type built-in
-			],
+			"name": "Language Support Constants",
+			"scope": ["support.constant", "constant.language", "constant.other", "constant.character", "constant.character.escape"],
 			"settings": {
-				"foreground": "#B4F0F0" // Màu cyan sáng
+				"foreground": "#ff9e64"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// FUNCTION PARAMETERS, REGEX CHARACTER SETS (Terminal Yellow)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Function Parameters",
+			"scope": ["variable.parameter", "meta.function.parameters variable", "meta.parameters variable"],
+			"settings": {
+				"foreground": "#e0af68",
+				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Numbers/Constants", // Số và hằng số
-			"scope": [
-				"constant.numeric", // Số (123, 3.14, 0xFF...)
-				"constant.language", // Hằng ngôn ngữ (true, false, null, undefined...)
-				"constant.character" // Ký tự đặc biệt
-			],
+			"name": "Regex Character Sets",
+			"scope": ["constant.other.character-class.regexp", "constant.character.character-class.regexp", "constant.other.character-class.set.regexp", "punctuation.definition.character-class.regexp"],
 			"settings": {
-				"foreground": "#5A96B4" // Màu xanh dương đậm
+				"foreground": "#e0af68"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// STRINGS, CSS CLASS NAMES (Terminal Green)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Strings",
+			"scope": ["string", "string.quoted", "string.quoted.single", "string.quoted.double", "string.template", "punctuation.definition.string"],
+			"settings": {
+				"foreground": "#9ece6a"
 			}
 		},
 		{
-			"name": "Operators/Punctuation", // Toán tử và dấu câu
-			"scope": [
-				"punctuation", // Dấu câu (. , ; : ( ) [ ] { })
-				"keyword.operator" // Toán tử (+ - * / = == != > < && ||)
-			],
+			"name": "CSS Class Names",
+			"scope": ["entity.other.attribute-name.class", "entity.other.attribute-name.class.css", "entity.other.attribute-name.class.scss"],
 			"settings": {
-				"foreground": "#7896B4" // Màu xanh xám
+				"foreground": "#9ece6a"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// OBJECT LITERAL KEYS, MARKDOWN LINKS (Terminal Green variant)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Object Literal Keys",
+			"scope": ["meta.object-literal.key", "support.type.property-name.json", "string.json support.type.property-name"],
+			"settings": {
+				"foreground": "#9ece6a"
 			}
 		},
 		{
-			"name": "Tags/HTML", // Thẻ HTML
-			"scope": [
-				"entity.name.tag" // Tên thẻ (div, span, p, a, button...)
-			],
+			"name": "Markdown Links",
+			"scope": ["markup.underline.link", "markup.underline.link.markdown", "string.other.link.title.markdown", "string.other.link.description.markdown"],
 			"settings": {
-				"foreground": "#f26a8d" // Màu xanh dương đậm
+				"foreground": "#9ece6a"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// REGEX LITERAL STRINGS
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Regex Literal Strings",
+			"scope": ["string.regexp", "constant.other.character-class.regexp"],
+			"settings": {
+				"foreground": "#41a6b5"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// LANGUAGE SUPPORT FUNCTIONS, CSS HTML ELEMENTS
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Language Support Functions",
+			"scope": ["support.function", "support.function.builtin", "support.function.misc"],
+			"settings": {
+				"foreground": "#2ac3de"
 			}
 		},
 		{
-			"name": "HTML Attributes", // Thuộc tính HTML
-			"scope": [
-				"entity.other.attribute-name" // Tên thuộc tính (class, id, href, src...)
-			],
+			"name": "CSS HTML Element Selectors",
+			"scope": ["entity.name.tag.css", "entity.name.tag.scss", "entity.name.tag.less", "source.css entity.name.tag", "source.scss entity.name.tag"],
 			"settings": {
-				"foreground": "#78B4D2", // Màu xanh dương nhạt
-				"fontStyle": "italic" // Chữ nghiêng
+				"foreground": "#2ac3de"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// OBJECT PROPERTIES, REGEX QUANTIFIERS, MARKDOWN HEADINGS (Terminal Cyan)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Object Properties",
+			"scope": ["variable.other.property", "variable.other.object.property", "support.variable.property", "meta.property.object"],
+			"settings": {
+				"foreground": "#7dcfff"
 			}
 		},
 		{
-			"name": "Variables", // Biến
-			"scope": [
-				"variable", // Tên biến thông thường
-				"parameter" // Tham số hàm
-			],
+			"name": "Regex Quantifiers and Flags",
+			"scope": ["keyword.operator.quantifier.regexp", "string.regexp keyword.other", "keyword.other.flag.regexp"],
 			"settings": {
-				"foreground": "#96B4D2" // Màu xanh xám nhạt (giống foreground mặc định)
+				"foreground": "#7dcfff"
 			}
 		},
 		{
-			"name": "Variable - Special", // Biến đặc biệt
-			"scope": [
-				"variable.language", // Biến ngôn ngữ (this, self, super...)
-				"variable.parameter" // Tham số hàm
-			],
+			"name": "Markdown Headings",
+			"scope": ["markup.heading", "markup.heading.markdown", "entity.name.section.markdown", "punctuation.definition.heading.markdown"],
 			"settings": {
-				"foreground": "#5A78B4", // Màu xanh tím
-				"fontStyle": "italic" // Chữ nghiêng
+				"foreground": "#7dcfff",
+				"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "JSON Keys", // Khóa JSON (tổng quát)
-			"scope": [
-				"support.type.property-name.json" // Tên property trong JSON
-			],
+			"name": "Markdown Code",
+			"scope": ["markup.inline.raw", "markup.raw.inline.markdown", "markup.fenced_code", "markup.raw.block.markdown"],
 			"settings": {
-				"foreground": "#78B4F0" // Màu xanh dương sáng
+				"foreground": "#7dcfff"
 			}
 		},
 		{
-			"name": "JSON Level 1", // Khóa JSON cấp 1 (ngoài cùng)
-			"scope": ["meta.structure.dictionary.json support.type.property-name.json"],
+			"name": "Import/Export Keywords",
+			"scope": ["keyword.control.import", "keyword.control.export", "keyword.control.from", "keyword.control.as", "keyword.control.default"],
 			"settings": {
-				"foreground": "#78B4D2" // Màu xanh dương nhạt
+				"foreground": "#7dcfff"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// FUNCTION NAMES, CSS PROPERTY NAMES (Terminal Blue)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Function Names",
+			"scope": ["entity.name.function", "support.function", "meta.function-call entity.name.function", "meta.function entity.name.function"],
+			"settings": {
+				"foreground": "#7aa2f7"
 			}
 		},
 		{
-			"name": "JSON Level 2", // Khóa JSON cấp 2 (nested 1 lần)
-			"scope": ["meta.structure.dictionary.json meta.structure.dictionary.json support.type.property-name.json"],
+			"name": "CSS Property Names",
+			"scope": ["support.type.property-name", "support.type.property-name.css", "support.type.property-name.scss", "meta.property-name.css", "meta.property-name.scss"],
 			"settings": {
-				"foreground": "#5A96B4" // Màu xanh đậm hơn
+				"foreground": "#7aa2f7"
 			}
 		},
 		{
-			"name": "JS/TS Functions", // Hàm trong JavaScript/TypeScript
-			"scope": [
-				"source.js entity.name.function.js", // Function trong JS
-				"source.ts entity.name.function.method.ts" // Method trong TS
-			],
+			"name": "Method Calls",
+			"scope": ["meta.method-call entity.name.function", "entity.name.method"],
 			"settings": {
-				"foreground": "#96D2F0", // Màu xanh dương sáng
-				"fontStyle": "italic" // Chữ nghiêng
+				"foreground": "#7aa2f7"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// CONTROL KEYWORDS, STORAGE TYPES, HTML ATTRIBUTES (Terminal Magenta)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Control Keywords",
+			"scope": ["keyword.control", "keyword.control.conditional", "keyword.control.loop", "keyword.control.flow", "keyword.control.return", "keyword.control.break", "keyword.control.continue", "keyword.control.switch", "keyword.control.case", "keyword.control.try", "keyword.control.catch", "keyword.control.finally", "keyword.control.throw"],
+			"settings": {
+				"foreground": "#bb9af7"
 			}
 		},
 		{
-			"name": "Python Specific", // Cú pháp riêng cho Python
-			"scope": [
-				"source.python keyword.control", // Từ khóa điều khiển Python (if, for, while...)
-				"source.python entity.name.function.python" // Tên hàm Python
-			],
+			"name": "Storage Types",
+			"scope": ["storage", "storage.type", "storage.modifier", "keyword.var", "keyword.let", "keyword.const", "keyword.function", "keyword.class", "keyword.interface", "keyword.type", "keyword.async", "keyword.await"],
 			"settings": {
-				"foreground": "#78B4B4" // Màu xanh ngọc
+				"foreground": "#bb9af7"
 			}
 		},
 		{
-			"name": "Python Self", // Từ khóa self trong Python
-			"scope": [
-				"variable.language.self.python", // self
-				"variable.language.special.self.python" // self (scope khác)
-			],
+			"name": "Regex Symbols and Operators",
+			"scope": ["keyword.operator.or.regexp", "keyword.operator.negation.regexp", "punctuation.definition.group.regexp", "constant.other.assertion.regexp"],
 			"settings": {
-				"foreground": "#5A78B4", // Màu xanh tím
-				"fontStyle": "italic" // Chữ nghiêng
+				"foreground": "#bb9af7"
 			}
 		},
 		{
-			"name": "Markdown Heading", // Tiêu đề Markdown (# ## ###...)
-			"scope": [
-				"markup.heading.markdown", // Heading trong Markdown
-				"markup.heading" // Heading tổng quát
-			],
+			"name": "HTML Attributes",
+			"scope": ["entity.other.attribute-name", "entity.other.attribute-name.html"],
 			"settings": {
-				"foreground": "#B4F0F0", // Màu cyan sáng
-				"fontStyle": "bold" // Chữ đậm
+				"foreground": "#bb9af7",
+				"fontStyle": "italic"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// VARIABLES, CLASS NAMES (Terminal White)
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Variables",
+			"scope": ["variable", "variable.other", "variable.other.readwrite", "variable.other.local"],
+			"settings": {
+				"foreground": "#c0caf5"
 			}
 		},
 		{
-			"name": "Markdown Links", // Link trong Markdown
-			"scope": [
-				"markup.underline.link.markdown", // Link URL
-				"markup.underline.link" // Link tổng quát
-			],
+			"name": "Class Names",
+			"scope": ["entity.name.class", "entity.name.type.class", "support.class", "entity.other.inherited-class"],
 			"settings": {
-				"foreground": "#3C96B4", // Màu xanh dương
-				"fontStyle": "underline" // Gạch chân
+				"foreground": "#c0caf5"
 			}
 		},
 		{
-			"name": "Markdown Bold", // Chữ đậm trong Markdown (**text**)
-			"scope": ["markup.bold"],
+			"name": "Type Names",
+			"scope": ["entity.name.type", "support.type", "support.type.primitive"],
 			"settings": {
-				"foreground": "#96D2F0", // Màu xanh sáng
-				"fontStyle": "bold" // Chữ đậm
+				"foreground": "#2ac3de"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// EDITOR FOREGROUND
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Editor Foreground",
+			"scope": ["source", "text"],
+			"settings": {
+				"foreground": "#c0caf5"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// MARKDOWN TEXT, HTML TEXT
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Markdown Text",
+			"scope": ["text.html.markdown", "meta.paragraph.markdown"],
+			"settings": {
+				"foreground": "#9aa5ce"
 			}
 		},
 		{
-			"name": "Markdown Italic", // Chữ nghiêng trong Markdown (*text*)
-			"scope": ["markup.italic"],
+			"name": "HTML Text",
+			"scope": ["text.html", "text.xml"],
 			"settings": {
-				"foreground": "#78B4B4", // Màu xanh ngọc
-				"fontStyle": "italic" // Chữ nghiêng
+				"foreground": "#9aa5ce"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// OPERATORS & PUNCTUATION
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Operators",
+			"scope": ["keyword.operator", "keyword.operator.arithmetic", "keyword.operator.comparison", "keyword.operator.assignment", "keyword.operator.logical"],
+			"settings": {
+				"foreground": "#89ddff"
 			}
 		},
 		{
-			"name": "Markdown Code", // Code trong Markdown (`code` hoặc ```)
-			"scope": [
-				"markup.inline.raw", // Inline code `code`
-				"markup.fenced_code" // Code block ```
-			],
+			"name": "Punctuation",
+			"scope": ["punctuation", "punctuation.separator", "punctuation.terminator", "punctuation.accessor", "meta.brace"],
 			"settings": {
-				"foreground": "#78B4D2" // Màu xanh dương nhạt
+				"foreground": "#89ddff"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// SPECIAL MARKDOWN
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Markdown Bold",
+			"scope": ["markup.bold", "punctuation.definition.bold.markdown"],
+			"settings": {
+				"foreground": "#ff9e64",
+				"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "CSS Properties", // Tên thuộc tính CSS
-			"scope": [
-				"support.type.property-name.css", // Property CSS (color, margin, padding...)
-				"support.type.vendored.property-name.css" // Property vendor (-webkit-, -moz-...)
-			],
+			"name": "Markdown Italic",
+			"scope": ["markup.italic", "punctuation.definition.italic.markdown"],
 			"settings": {
-				"foreground": "#7896B4" // Màu xanh xám
+				"foreground": "#f7768e",
+				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "CSS Values", // Giá trị CSS
-			"scope": [
-				"support.constant.property-value.css" // Giá trị CSS (block, inline, flex...)
-			],
+			"name": "Markdown Quote",
+			"scope": ["markup.quote", "punctuation.definition.quote.begin.markdown"],
 			"settings": {
-				"foreground": "#78B4B4" // Màu xanh ngọc
+				"foreground": "#565f89",
+				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Invalid/Errors", // Code lỗi/không hợp lệ
-			"scope": [
-				"invalid", // Invalid chung
-				"invalid.illegal" // Cú pháp bất hợp pháp
-			],
+			"name": "Markdown List",
+			"scope": ["markup.list", "punctuation.definition.list.begin.markdown"],
 			"settings": {
-				"foreground": "#5A7896", // Màu xám xanh
-				"fontStyle": "strikethrough" // Gạch ngang (strikethrough)
+				"foreground": "#f7768e"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// JSON
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "JSON Property Names",
+			"scope": ["support.type.property-name.json"],
+			"settings": {
+				"foreground": "#7dcfff"
 			}
 		},
 		{
-			"name": "Regex", // Biểu thức chính quy (Regular Expression)
-			"scope": [
-				"string.regexp" // Regex pattern
-			],
+			"name": "JSON String Values",
+			"scope": ["string.quoted.double.json"],
 			"settings": {
-				"foreground": "#3C96B4" // Màu xanh dương
+				"foreground": "#9ece6a"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// CSS SPECIFIC
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "CSS ID Selector",
+			"scope": ["entity.other.attribute-name.id", "entity.other.attribute-name.id.css"],
+			"settings": {
+				"foreground": "#ff9e64"
 			}
 		},
 		{
-			"name": "Escape Characters", // Ký tự escape
-			"scope": [
-				"constant.character.escape" // Escape sequence (\n, \t, \\, \"...)
-			],
+			"name": "CSS Pseudo Classes",
+			"scope": ["entity.other.attribute-name.pseudo-class", "entity.other.attribute-name.pseudo-element"],
 			"settings": {
-				"foreground": "#5A96B4" // Màu xanh đậm
+				"foreground": "#2ac3de"
+			}
+		},
+		{
+			"name": "CSS Property Values",
+			"scope": ["support.constant.property-value.css", "support.constant.color.css", "constant.other.color.rgb-value.css", "constant.other.rgb-value.css"],
+			"settings": {
+				"foreground": "#ff9e64"
+			}
+		},
+		{
+			"name": "CSS Variables",
+			"scope": ["variable.css", "variable.argument.css", "variable.scss"],
+			"settings": {
+				"foreground": "#c0caf5"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// TYPESCRIPT/JAVASCRIPT SPECIFIC
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "TypeScript Types",
+			"scope": ["entity.name.type.ts", "entity.name.type.tsx", "support.type.builtin.ts", "support.type.primitive.ts"],
+			"settings": {
+				"foreground": "#2ac3de"
+			}
+		},
+		{
+			"name": "TypeScript Interfaces",
+			"scope": ["entity.name.type.interface.ts", "entity.name.type.interface.tsx"],
+			"settings": {
+				"foreground": "#2ac3de"
+			}
+		},
+		{
+			"name": "TypeScript Enums",
+			"scope": ["entity.name.type.enum.ts", "entity.name.type.enum.tsx"],
+			"settings": {
+				"foreground": "#ff9e64"
+			}
+		},
+		{
+			"name": "TypeScript Decorators",
+			"scope": ["meta.decorator", "punctuation.decorator"],
+			"settings": {
+				"foreground": "#e0af68"
+			}
+		},
+		{
+			"name": "JSX/TSX Tags",
+			"scope": ["support.class.component.tsx", "support.class.component.jsx"],
+			"settings": {
+				"foreground": "#2ac3de"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// PYTHON SPECIFIC
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Python Function Decorators",
+			"scope": ["entity.name.function.decorator.python", "meta.function.decorator.python"],
+			"settings": {
+				"foreground": "#e0af68"
+			}
+		},
+		{
+			"name": "Python Magic Methods",
+			"scope": ["support.function.magic.python"],
+			"settings": {
+				"foreground": "#7aa2f7",
+				"fontStyle": "italic"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// RUST SPECIFIC
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Rust Lifetimes",
+			"scope": ["storage.modifier.lifetime.rust", "entity.name.type.lifetime.rust"],
+			"settings": {
+				"foreground": "#f7768e",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Rust Macros",
+			"scope": ["entity.name.function.macro.rust", "support.macro.rust"],
+			"settings": {
+				"foreground": "#2ac3de"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// GO SPECIFIC
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Go Package Names",
+			"scope": ["entity.name.package.go"],
+			"settings": {
+				"foreground": "#c0caf5"
+			}
+		},
+
+		// ═══════════════════════════════════════════════════════════
+		// INVALID/DEPRECATED
+		// ═══════════════════════════════════════════════════════════
+		{
+			"name": "Invalid",
+			"scope": ["invalid.illegal"],
+			"settings": {
+				"foreground": "#f7768e",
+				"fontStyle": "strikethrough"
+			}
+		},
+		{
+			"name": "Deprecated",
+			"scope": ["invalid.deprecated"],
+			"settings": {
+				"foreground": "#565f89",
+				"fontStyle": "strikethrough"
 			}
 		}
 	]

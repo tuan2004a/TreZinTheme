@@ -1,0 +1,120 @@
+═══════════════════════════════════════════════════════════
+Theme - Nigh Towl
+═══════════════════════════════════════════════════════════
+
+#181830
+#1b1d36
+#90C0F0
+#4860A8
+#CAF0F8
+#486090
+#ffffff
+#6090C0
+#7890A8
+#486078
+#303060
+#183060
+
+#ff0000
+#ffcb6b
+
+/** "activityBar.background": "#181830",
+"activityBar.border": "#ff000000",
+"activityBar.foreground": "#CAF0F8",
+"activityBarBadge.background": "#4860A8",
+"activityBarBadge.foreground": "#fff",
+"badge.background": "#4860A8",
+"badge.foreground": "#fff",
+"breadcrumb.activeSelectionForeground": "#CAF0F8",
+"breadcrumb.background": "#181830",
+"breadcrumb.focusForeground": "#CAF0F8",
+"breadcrumb.foreground": "#486090",
+"breadcrumbPicker.background": "#1b1d36",
+"button.background": "#6078A8",
+"contrastBorder": "#ff000000",
+"editor.background": "#181830",
+"editor.findMatchBackground": "#486090",
+"editor.findMatchBorder": "#CAF0F8",
+"editor.findMatchHighlightBackground": "#6090C0",
+"editor.findMatchHighlightBorder": "#ff000000",
+"editor.foreground": "#486078",
+"editor.lineHighlightBackground": "#4860902c",
+"editorBracketMatch.background": "#ff000000",
+"editorBracketMatch.border": "#caf0f879",
+"editorCursor.foreground": "#CAF0F8",
+"editorError.foreground": "#48609070",
+"editorGroup.border": "#30306055",
+"editorGroupHeader.tabsBackground": "#1b1d36",
+"editorGutter.addedBackground": "#4860A8",
+"editorGutter.modifiedBackground": "#4860A8",
+"editorHoverWidget.background": "#303060",
+"editorHoverWidget.border": "#ff000000",
+"editorIndentGuide.activeBackground1": "#4860A8",
+"editorIndentGuide.background1": "#303060a1",
+"editorInfo.foreground": "#6090C0",
+"editorLineNumber.activeForeground": "#90C0F0",
+"editorLineNumber.foreground": "#4860786a",
+"editorLink.activeForeground": "#7890A8",
+"editorMarkerNavigation.background": "#1b1d36",
+"editorOverviewRuler.border": "#303060",
+"editorOverviewRuler.errorForeground": "#ff0000",
+"editorOverviewRuler.findMatchForeground": "#486078f5",
+"editorOverviewRuler.infoForeground": "#90C0F0",
+"editorOverviewRuler.warningForeground": "#ffcb6b",
+"editorSuggestWidget.background": "#1b1d36",
+"editorSuggestWidget.border": "#3030607e",
+"editorSuggestWidget.foreground": "#90C0F0",
+"editorSuggestWidget.highlightForeground": "#90C0F0",
+"editorSuggestWidget.selectedBackground": "#4860902c",
+"editorWarning.foreground": "#ffcb6b",
+"editorWhitespace.foreground": "#303060",
+"editorWidget.background": "#1b1d36",
+"editorWidget.border": "#ff000000",
+"editorWidget.resizeBorder": "#ff000000",
+"extensionButton.prominentBackground": "#4860A8",
+"extensionButton.prominentHoverBackground": "#183060",
+"focusBorder": "#486078",
+"input.background": "#183060",
+"input.border": "#486078",
+"input.foreground": "#90C0F0",
+"input.placeholderForeground": "#486078",
+"inputOption.activeBackground": "#303060",
+"inputOption.activeBorder": "#90C0F0",
+"inputValidation.errorBorder": "#ff0000",
+"inputValidation.infoBorder": "#6090C0",
+"inputValidation.warningBorder": "#18306050",
+"list.activeSelectionBackground": "#183060",
+"list.activeSelectionForeground": "#90C0F0",
+"list.hoverBackground": "#183060",
+"list.hoverForeground": "#90C0F0",
+"list.inactiveSelectionBackground": "#18306062",
+"list.inactiveSelectionForeground": "#90C0F0",
+"list.warningForeground": "#ffcb6b", //check 
+"sideBar.background": "#1b1d36",   */
+
+═══════════════════════════════════════════════════════════
+Theme - Nigh Towl ( from faucetcrypto.com)
+═══════════════════════════════════════════════════════════
+#151f33
+#51a2ff
+#4860A8
+#fff
+#1d293d
+#90a1b9
+#0f172b
+#486090
+
+
+#181830
+#1b1d36
+#90C0F0
+#CAF0F8
+#ffffff
+#6090C0
+#7890A8
+#486078
+#303060
+#183060
+
+#ff0000
+#ffcb6b
