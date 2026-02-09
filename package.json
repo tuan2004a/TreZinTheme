@@ -20,6 +20,11 @@
 				"label": "TreZin NightOwl",
 				"uiTheme": "vs-dark",
 				"path": "./themes/nightowl-color-theme.json"
+			},
+			{
+				"label": "TreZin TwilightStorm",
+				"uiTheme": "vs-dark",
+				"path": "./themes/twilightstorm-color-theme.json"
 			}
 		]
 	}
