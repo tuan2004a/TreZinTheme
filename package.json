@@ -30,6 +30,11 @@
 				"label": "TreZin MidnightGothic",
 				"uiTheme": "vs-dark",
 				"path": "./themes/midnightgothic-color-theme.json"
+			},
+			{
+				"label": "TreZin MatchaDark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/matchadark-color-theme.json"
 			}
 		]
 	}
