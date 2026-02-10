@@ -25,6 +25,11 @@
 				"label": "TreZin TwilightStorm",
 				"uiTheme": "vs-dark",
 				"path": "./themes/twilightstorm-color-theme.json"
+			},
+			{
+				"label": "TreZin MidnightGothic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/midnightgothic-color-theme.json"
 			}
 		]
 	}
