@@ -27,14 +27,14 @@
 				"path": "./themes/twilightstorm-color-theme.json"
 			},
 			{
-				"label": "TreZin MidnightGothic",
-				"uiTheme": "vs-dark",
-				"path": "./themes/midnightgothic-color-theme.json"
-			},
-			{
 				"label": "TreZin MatchaDark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/matchadark-color-theme.json"
+			},
+			{
+				"label": "TreZin CityNight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/citynight-color-theme.json"
 			}
 		]
 	}

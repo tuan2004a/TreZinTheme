@@ -2,6 +2,7 @@
 	"name": "TreZinkit Matcha Dark",
 	"type": "dark",
 	"semanticHighlighting": true,
+	"description":"",
 	"semanticTokenColors": {
         "parameter.declaration": {
             "foreground": "#a8c5a0"
